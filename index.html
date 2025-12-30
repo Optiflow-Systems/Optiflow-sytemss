@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <link rel="icon" href="logodeoptiflow.png" type="image/png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit gratuit de vos flux financiers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+
+            color: rgb(6, 5, 5);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 0;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .cta {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+            color: #009688;
+        }
+
+        .benefits {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .benefit {
+            text-align: center;
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .benefit i {
+            font-size: 40px;
+            color: #009688;
+        }
+
+        .form-container {
+            margin-top: 30px;
+        }
+
+                .form-container h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-container label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .form-container select,
+        .form-container input[type="email"],
+        .form-container textarea {
+            padding: 10px;
+            margin-top: 5px;
+            width: 80%;
+            max-width: 600px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-container textarea {
+            height: 100px;
+        }
+
+        .form-container button {
+            padding: 15px 30px;
+            background-color: #009688;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #00796b;
+        }
+
+        .micro-reassurance {
+            font-size: 14px;
+            text-align: center;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #141414;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+.header {
+    position: relative;
+    padding: 10px;
+}
+
+/* Logo en haut à gauche */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    width: 100px;   /* taille du logo */
+    height: auto;  /* garde les proportions */
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Audit gratuit de vos flux financiers</h1>
+    <p>Identifiez en 30 minutes où vous perdez du temps et de l’argent.</p>
+</header>
+
+<div class="container">
+    <p class="cta">PME, cabinets et structures B2B avec un volume régulier de facturation</p>
+
+    <div class="benefits">
+        <div class="benefit">
+            <i>✔</i>
+            <p>Analyse du process actuel</p>
+        </div>
+        <div class="benefit">
+            <i>✔</i>
+            <p>Points de friction</p>
+        </div>
+        <div class="benefit">
+            <i>✔</i>
+            <p>Estimation des gains</p>
+        </div>
+        <div class="benefit">
+            <i>✔</i>
+            <p>Recommandations claires</p>
+        </div>
+    </div>
+
+    <p class="micro-reassurance">Audit gratuit, sans engagement. Réponse sous 48h.</p>
+
+    <div class="form-container" id="form">
+        <h2>Demandez votre audit</h2>
+        <form action="" method="POST">
+            <label for="structure">Type de structure :</label>
+            <select id="structure" name="structure">
+                <option value="PME/TPE">PME / TPE</option>
+                <option value="Cabinet">Cabinet</option>
+                <option value="Autre">Autre structure B2B</option>
+            </select>
+
+            <label for="volume">Volume de factures par mois :</label>
+            <select id="volume" name="volume">
+                <option value="<20">&lt; 20</option>
+                <option value="20-50">20–50</option>
+                <option value="50-100">50–100</option>
+                <option value=">100">&gt; 100</option>
+            </select>
+
+            <label for="problematique">Problématique principale :</label>
+            <select id="problematique" name="problematique">
+                <option value="Traitement factures">Traitement factures</option>
+                <option value="Suivi et relances">Suivi & relances</option>
+                <option value="Manque de visibilité">Manque de visibilité</option>
+                <option value="Organisation documents">Organisation documents</option>
+            </select>
+
+            <label for="organisation">Niveau d’organisation actuel :</label>
+            <select id="organisation" name="organisation">
+                <option value="Manuel">Manuel</option>
+                <option value="Partiellement structuré">Partiellement structuré</option>
+                <option value="Structuré mais chronophage">Structuré mais chronophage</option>
+                <option value="Souhait d’optimisation">Souhait d’optimisation</option>
+            </select>
+
+            <label for="email">Email professionnel :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contexte">Contexte / enjeux spécifiques :</label>
+            <textarea id="contexte" name="contexte"></textarea>
+
+            <label for="temps">En moyenne combien de temps votre équipe consacre t-elle chaque semaine à ces tâches manuelles et répétitives ?</label>
+            <select id="temps" name="temps">
+                <option value="moins de 1 heure">Moins de 1 heure</option>
+                <option value="1 à 3 heures">1 à 3 heures</option>
+                <option value="3 à 5 heures">3 à 5 heures</option>
+                <option value="plus de 5 heures">Plus de 5 heures</option>
+            </select>
+
+            <label for="personnes">Combien de personnes interviennent aujourd’hui dans la gestion administrative et financière ?</label>
+            <select id="personnes" name="personnes">
+                <option value="1">1 personne</option>
+                <option value="2-3">2 à 3 personnes</option>
+                <option value="4-6">4 à 6 personnes</option>
+                <option value="plus de 6">Plus de 6 personnes</option>
+            </select>
+
+            <label for="outils">Quels outils utilisez-vous actuellement pour la facturation et le suivi ?</label>
+            <select id="outils" name="outils">
+                <option value="Logiciel de facturation">Logiciel de facturation / comptabilité</option>
+                <option value="Excel">Excel / fichiers manuels</option>
+                <option value="Emails">Emails uniquement</option>
+                <option value="Plusieurs outils">Plusieurs outils connectés</option>
+                <option value="Quick book">Quick book</option>
+                <option value="Ciel">Ciel</option>
+                <option value="EBP">EBP</option>
+                <option value="SAGE">SAGE</option>
+            </select>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <p class="micro-reassurance">Votre demande d’audit a bien été enregistrée. Un membre d’Optiflow Systems vous recontactera sous 48h pour cadrer l’analyse.</p>
+</div>
+
+</body>
+</html>
